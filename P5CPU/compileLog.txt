@@ -1,0 +1,83 @@
+Running: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -nodebug -prj d:\VHDLfile\P5CPU\assembly_line_CPU\module_pipeline.prj -o d:\VHDLfile\P5CPU\testmips.exe mipstest 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/adder.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/ALU.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/AT_decoder.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/comparator.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/controller.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/datapath.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/DM.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/EX.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/EX_MEMReg.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/EXT.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/forward_signal_generator.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/GRF.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/hazard_judge.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/hazard_solver.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/ID.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/ID_EXReg.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/IF.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/IF_IDReg.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/IM.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/instr_judge.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/MEM.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/MEM_WBReg.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/mips.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/mipstest.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/mux.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/Nadder.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/PC.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/signal_generator.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/splitter.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/stall_flush_signal_generator.v" into library work
+Analyzing Verilog file "d:/VHDLfile/P5CPU/assembly_line_CPU/WB.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module adder
+Compiling module IM
+Compiling module nPCmux
+Compiling module IF
+Compiling module IF_IDReg
+Compiling module GRF
+Compiling module EXT
+Compiling module CMPAformux
+Compiling module CMPBformux
+Compiling module Raformux
+Compiling module Nadder
+Compiling module splitter
+Compiling module comparator
+Compiling module ID
+Compiling module ID_EXReg
+Compiling module ALU
+Compiling module ALUAformux
+Compiling module ALUBformux
+Compiling module ALUBmux
+Compiling module RD2formux
+Compiling module EX
+Compiling module EX_MEMReg
+Compiling module DM
+Compiling module DM_WDformux
+Compiling module MEM
+Compiling module MEM_WBReg
+Compiling module WDmux
+Compiling module WB
+Compiling module datapath
+Compiling module instr_judge
+Compiling module signal_generator
+Compiling module controller
+Compiling module AT_decoder
+Compiling module forward_signal_generator
+Compiling module stall_flush_signal_generator
+Compiling module hazard_solver
+Compiling module mips
+Compiling module mipstest
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 39 Verilog Units
+Built simulation executable d:\VHDLfile\P5CPU\testmips.exe
+Fuse Memory Usage: 30356 KB
+Fuse CPU Usage: 952 ms

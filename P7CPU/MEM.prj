@@ -1,0 +1,7 @@
+verilog work "mux.v"
+verilog work "ExcCode_generator.v"
+verilog work "DMfdata2mdata.v"
+verilog work "DMEXT.v"
+verilog work "CP0.v"
+verilog work "byteen_generator.v"
+verilog work "MEM.v"

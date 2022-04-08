@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="assembly_line_CPU" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/EX D:|VHDLfile|P5CPU|assembly_line_CPU|EX.v</ClosedNode>
+         <ClosedNode>/ID D:|VHDLfile|P5CPU|assembly_line_CPU|ID.v</ClosedNode>
+         <ClosedNode>/IF D:|VHDLfile|P5CPU|assembly_line_CPU|IF.v</ClosedNode>
+         <ClosedNode>/MEM D:|VHDLfile|P5CPU|assembly_line_CPU|MEM.v</ClosedNode>
+         <ClosedNode>/WB D:|VHDLfile|P5CPU|assembly_line_CPU|WB.v</ClosedNode>
+         <ClosedNode>/controller D:|VHDLfile|P5CPU|assembly_line_CPU|controller.v</ClosedNode>
+         <ClosedNode>/datapath D:|VHDLfile|P5CPU|assembly_line_CPU|datapath.v</ClosedNode>
+         <ClosedNode>/datapath D:|VHDLfile|P5CPU|assembly_line_CPU|datapath.v/uut_ID - ID</ClosedNode>
+         <ClosedNode>/datapath D:|VHDLfile|P5CPU|assembly_line_CPU|datapath.v/uut_IF - IF</ClosedNode>
+         <ClosedNode>/datapath D:|VHDLfile|P5CPU|assembly_line_CPU|datapath.v/uut_MEM - MEM</ClosedNode>
+         <ClosedNode>/datapath D:|VHDLfile|P5CPU|assembly_line_CPU|datapath.v/uut_WB - WB</ClosedNode>
+         <ClosedNode>/hazard_solver D:|VHDLfile|P5CPU|assembly_line_CPU|hazard_solver.v</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/controller_uut - controller</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/datapath_uut - datapath/EX_uut - EX</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/datapath_uut - datapath/ID_uut - ID</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/datapath_uut - datapath/IF_uut - IF</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/datapath_uut - datapath/MEM_uut - MEM</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/datapath_uut - datapath/WB_uut - WB</ClosedNode>
+         <ClosedNode>/mips D:|VHDLfile|P5CPU|assembly_line_CPU|mips.v/uut_datapath - datapath</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mips (D:/VHDLfile/P5CPU/assembly_line_CPU/mips.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000306000000020000000000000000000000000200000064ffffffff000000810000000300000002000003060000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mips (D:/VHDLfile/P5CPU/assembly_line_CPU/mips.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ec000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ec0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>hazard_solver.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000192000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004800000001000000000000002c0000000100000000000000980000000100000000000000860000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>hazard_solver.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000064000000010001000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View RTL Schematic</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View RTL Schematic</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000016f0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/mipstest D:|VHDLfile|P5CPU|assembly_line_CPU|mipstest.v/uut - mips/datapath_uut - datapath/WB_uut - WB</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mipstest (D:/VHDLfile/P5CPU/assembly_line_CPU/mipstest.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000031a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000031a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mipstest (D:/VHDLfile/P5CPU/assembly_line_CPU/mipstest.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000167000000010000000100000000000000000000000064ffffffff000000810000000000000001000001670000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

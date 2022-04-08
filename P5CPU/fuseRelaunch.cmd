@@ -1,0 +1,1 @@
+-nodebug -prj "d:\VHDLfile\P5CPU\assembly_line_CPU\module_pipeline.prj" -o "d:\VHDLfile\P5CPU\testmips.exe" "mipstest" 

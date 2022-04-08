@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDLfile/P7CPU/Generaltb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Generaltb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/ExcCode_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcCode_in[6:2]</obj_property>
+      <obj_property name="ObjectShortName">ExcCode_in[6:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/IntReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IntReq</obj_property>
+      <obj_property name="ObjectShortName">IntReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/EPC_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EPC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EPC_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/DevReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DevReq</obj_property>
+      <obj_property name="ObjectShortName">DevReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/ExcReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcReq</obj_property>
+      <obj_property name="ObjectShortName">ExcReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/Req" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Req</obj_property>
+      <obj_property name="ObjectShortName">Req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/RD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/SR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/Cause" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Cause[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/EPC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EPC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/CP0_uut/PRId" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PRId[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PRId[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_IF" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_EX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/DM_WDfor_uut/DM_WDfor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DM_WDfor[2:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_WDfor[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/DM_WDfor_uut/RD2_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RD2_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD2_MEM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/DM_WDfor_uut/WD_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WD_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD_WB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/DM_WDfor_uut/DM_WD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DM_WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_WD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/ID_uut/Instr_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instr_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/ALU_uut/overflow_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">overflow_in</obj_property>
+      <obj_property name="ObjectShortName">overflow_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/ALU_uut/overflow_real" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">overflow_real</obj_property>
+      <obj_property name="ObjectShortName">overflow_real</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/ALU_uut/expadd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expadd[32:0]</obj_property>
+      <obj_property name="ObjectShortName">expadd[32:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/interrupt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt</obj_property>
+      <obj_property name="ObjectShortName">interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/timer0_uut/_IRQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">_IRQ</obj_property>
+      <obj_property name="ObjectShortName">_IRQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/timer1_uut/_IRQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">_IRQ</obj_property>
+      <obj_property name="ObjectShortName">_IRQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA1</obj_property>
+      <obj_property name="ObjectShortName">stallRA1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA2</obj_property>
+      <obj_property name="ObjectShortName">stallRA2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallMDM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallMDM</obj_property>
+      <obj_property name="ObjectShortName">stallMDM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stalleret" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stalleret</obj_property>
+      <obj_property name="ObjectShortName">stalleret</obj_property>
+   </wvobject>
+</wave_config>

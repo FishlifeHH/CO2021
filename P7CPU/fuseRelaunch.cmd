@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VHDLfile/P7CPU/Generaltb_isim_beh.exe" -prj "D:/VHDLfile/P7CPU/Generaltb_beh.prj" "work.Generaltb" "work.glbl" 

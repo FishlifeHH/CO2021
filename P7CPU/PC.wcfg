@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDLfile/P7CPU/Generaltb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Generaltb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_IF" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_EX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_IF_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_IF_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_IF_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/IntReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IntReq</obj_property>
+      <obj_property name="ObjectShortName">IntReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/JumpCtrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">JumpCtrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">JumpCtrl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/adder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">adder[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/Nadder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Nadder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Nadder[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/splitter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">splitter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">splitter[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/RD1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RD1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/EPC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EPC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_uut/nPCmux_uut/nPC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nPC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/eret_ID" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eret_ID</obj_property>
+      <obj_property name="ObjectShortName">eret_ID</obj_property>
+   </wvobject>
+</wave_config>

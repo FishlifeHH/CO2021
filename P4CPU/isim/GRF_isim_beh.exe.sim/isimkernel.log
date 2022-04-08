@@ -1,0 +1,28 @@
+Command line:
+   GRF_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49879
+
+Tue Nov 16 19:54:16 2021
+
+
+ Elaboration Time: 0.375 sec
+
+ Current Memory Usage: 5654.22 Meg
+
+ Total Signals          : 23
+ Total Nets             : 159
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 1295
+
+ Total Simulation Time: 0.421875 sec
+
+ Current Memory Usage: 5654.22 Meg
+
+Tue Nov 16 19:54:18 2021
+

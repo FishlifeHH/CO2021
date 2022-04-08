@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/VHDL file/P4CPU/mips.xst" -ofn "D:/VHDL file/P4CPU/mips.syr" 
+xst -intstyle ise -ifn "D:/VHDL file/P4CPU/mips.xst" -ofn "D:/VHDL file/P4CPU/mips.syr" 

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDLfile/P6CPU/mips_txt_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mips_txt" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/mips_txt/i_inst_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_inst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_inst_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/PC_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/PC_EX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/PC_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/PC_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA1</obj_property>
+      <obj_property name="ObjectShortName">stallRA1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA2</obj_property>
+      <obj_property name="ObjectShortName">stallRA2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA1E" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA1E</obj_property>
+      <obj_property name="ObjectShortName">stallRA1E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA1M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA1M</obj_property>
+      <obj_property name="ObjectShortName">stallRA1M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA1W" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA1W</obj_property>
+      <obj_property name="ObjectShortName">stallRA1W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA2E" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA2E</obj_property>
+      <obj_property name="ObjectShortName">stallRA2E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA2M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA2M</obj_property>
+      <obj_property name="ObjectShortName">stallRA2M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallRA2W" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallRA2W</obj_property>
+      <obj_property name="ObjectShortName">stallRA2W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/stallMDM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stallMDM</obj_property>
+      <obj_property name="ObjectShortName">stallMDM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/WA_EX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WA_EX[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WA_EX[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/WA_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WA_MEM[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WA_MEM[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/datapath_uut/WA_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WA_WB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WA_WB[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/RA1_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RA1_ID[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RA1_ID[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_txt/uut/hazardsolver_uut/stall_flush_signal_generator_uut/RA2_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RA2_ID[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RA2_ID[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1357 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\splitter.v" into library work
+Parsing module <splitter>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\Nadder.v" into library work
+Parsing module <Nadder>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v" into library work
+Parsing module <WDmux>.
+Parsing module <ALUBmux>.
+Parsing module <nPCmux>.
+Parsing module <ALUAformux>.
+Parsing module <ALUBformux>.
+Parsing module <DM_WDformux>.
+Parsing module <CMPAformux>.
+Parsing module <CMPBformux>.
+Parsing module <Raformux>.
+Parsing module <RD2formux>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\IM.v" into library work
+Parsing module <IM>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\EXT.v" into library work
+Parsing module <EXT>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\DM.v" into library work
+Parsing module <DM>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\comparator.v" into library work
+Parsing module <comparator>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\WB.v" into library work
+Parsing module <WB>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\stall_flush_signal_generator.v" into library work
+Parsing module <stall_flush_signal_generator>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\signal_generator.v" into library work
+Parsing module <signal_generator>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\MEM_WBReg.v" into library work
+Parsing module <MEM_WBReg>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\MEM.v" into library work
+Parsing module <MEM>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\instr_judge.v" into library work
+Parsing module <instr_judge>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\IF_IDReg.v" into library work
+Parsing module <IF_IDReg>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\IF.v" into library work
+Parsing module <IF>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\ID_EXReg.v" into library work
+Parsing module <ID_EXReg>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\ID.v" into library work
+Parsing module <ID>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\forward_signal_generator.v" into library work
+Parsing module <forward_signal_generator>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\EX_MEMReg.v" into library work
+Parsing module <EX_MEMReg>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\EX.v" into library work
+Parsing module <EX>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\AT_decoder.v" into library work
+Parsing module <AT_decoder>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\hazard_solver.v" into library work
+Parsing module <hazard_solver>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\datapath.v" into library work
+Parsing module <datapath>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\controller.v" into library work
+Parsing module <controller>.
+Analyzing Verilog file "D:\VHDLfile\P5CPU\assembly_line_CPU\mips.v" into library work
+Parsing module <mips>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mips>.
+
+Elaborating module <datapath>.
+
+Elaborating module <IF>.
+
+Elaborating module <PC>.
+
+Elaborating module <adder>.
+
+Elaborating module <IM>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "D:\VHDLfile\P5CPU\assembly_line_CPU\IM.v" Line 27: Signal <rom> in initial block is partially initialized.
+
+Elaborating module <nPCmux>.
+
+Elaborating module <IF_IDReg>.
+
+Elaborating module <ID>.
+
+Elaborating module <GRF>.
+"D:\VHDLfile\P5CPU\assembly_line_CPU\GRF.v" Line 41. $display  32'b................................ 5'b..... 32'b................................
+
+Elaborating module <EXT>.
+
+Elaborating module <CMPAformux>.
+
+Elaborating module <CMPBformux>.
+
+Elaborating module <Raformux>.
+
+Elaborating module <Nadder>.
+
+Elaborating module <splitter>.
+
+Elaborating module <comparator>.
+
+Elaborating module <ID_EXReg>.
+
+Elaborating module <EX>.
+
+Elaborating module <ALU>.
+
+Elaborating module <ALUAformux>.
+
+Elaborating module <ALUBformux>.
+
+Elaborating module <ALUBmux>.
+
+Elaborating module <RD2formux>.
+
+Elaborating module <EX_MEMReg>.
+WARNING:HDLCompiler:1127 - "D:\VHDLfile\P5CPU\assembly_line_CPU\datapath.v" Line 213: Assignment to RA1_MEM ignored, since the identifier is never used
+
+Elaborating module <MEM>.
+
+Elaborating module <DM>.
+"D:\VHDLfile\P5CPU\assembly_line_CPU\DM.v" Line 39. $display  32'b................................ 32'b................................ 32'b................................
+
+Elaborating module <DM_WDformux>.
+
+Elaborating module <MEM_WBReg>.
+
+Elaborating module <WB>.
+
+Elaborating module <WDmux>.
+WARNING:HDLCompiler:1127 - "D:\VHDLfile\P5CPU\assembly_line_CPU\datapath.v" Line 259: Assignment to equal_out ignored, since the identifier is never used
+
+Elaborating module <controller>.
+
+Elaborating module <instr_judge>.
+
+Elaborating module <signal_generator>.
+
+Elaborating module <hazard_solver>.
+
+Elaborating module <AT_decoder>.
+WARNING:HDLCompiler:413 - "D:\VHDLfile\P5CPU\assembly_line_CPU\AT_decoder.v" Line 40: Result of 5-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\VHDLfile\P5CPU\assembly_line_CPU\AT_decoder.v" Line 41: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\VHDLfile\P5CPU\assembly_line_CPU\AT_decoder.v" Line 42: Result of 5-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <forward_signal_generator>.
+
+Elaborating module <stall_flush_signal_generator>.
+WARNING:Xst:2972 - "D:\VHDLfile\P5CPU\assembly_line_CPU\mips.v" line 30. All outputs of instance <datapath_uut> of block <datapath> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\VHDLfile\P5CPU\assembly_line_CPU\mips.v" line 70. All outputs of instance <controller_uut> of block <controller> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\VHDLfile\P5CPU\assembly_line_CPU\mips.v" line 90. All outputs of instance <hazardsolver_uut> of block <hazard_solver> are unconnected in block <mips>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mips>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mips.v".
+    Summary:
+	no macro.
+Unit <mips> synthesized.
+
+Synthesizing Unit <IF>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\IF.v".
+    Summary:
+	no macro.
+Unit <IF> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\PC.v".
+    Found 32-bit register for signal <PC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\adder.v".
+    Found 32-bit adder for signal <PC4> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <IM>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\IM.v".
+WARNING:Xst:647 - Input <PC<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom', unconnected in block 'IM', is tied to its initial value.
+    Found 65536x32-bit single-port Read Only RAM <Mram_rom> for signal <rom>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <IM> synthesized.
+
+Synthesizing Unit <nPCmux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Found 32-bit 4-to-1 multiplexer for signal <nPC> created at line 51.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <nPCmux> synthesized.
+
+Synthesizing Unit <IF_IDReg>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\IF_IDReg.v".
+    Found 1-bit register for signal <PC4_ID<31>>.
+    Found 1-bit register for signal <PC4_ID<30>>.
+    Found 1-bit register for signal <PC4_ID<29>>.
+    Found 1-bit register for signal <PC4_ID<28>>.
+    Found 1-bit register for signal <PC4_ID<27>>.
+    Found 1-bit register for signal <PC4_ID<26>>.
+    Found 1-bit register for signal <PC4_ID<25>>.
+    Found 1-bit register for signal <PC4_ID<24>>.
+    Found 1-bit register for signal <PC4_ID<23>>.
+    Found 1-bit register for signal <PC4_ID<22>>.
+    Found 1-bit register for signal <PC4_ID<21>>.
+    Found 1-bit register for signal <PC4_ID<20>>.
+    Found 1-bit register for signal <PC4_ID<19>>.
+    Found 1-bit register for signal <PC4_ID<18>>.
+    Found 1-bit register for signal <PC4_ID<17>>.
+    Found 1-bit register for signal <PC4_ID<16>>.
+    Found 1-bit register for signal <PC4_ID<15>>.
+    Found 1-bit register for signal <PC4_ID<14>>.
+    Found 1-bit register for signal <PC4_ID<13>>.
+    Found 1-bit register for signal <PC4_ID<12>>.
+    Found 1-bit register for signal <PC4_ID<11>>.
+    Found 1-bit register for signal <PC4_ID<10>>.
+    Found 1-bit register for signal <PC4_ID<9>>.
+    Found 1-bit register for signal <PC4_ID<8>>.
+    Found 1-bit register for signal <PC4_ID<7>>.
+    Found 1-bit register for signal <PC4_ID<6>>.
+    Found 1-bit register for signal <PC4_ID<5>>.
+    Found 1-bit register for signal <PC4_ID<4>>.
+    Found 1-bit register for signal <PC4_ID<3>>.
+    Found 1-bit register for signal <PC4_ID<2>>.
+    Found 1-bit register for signal <PC4_ID<1>>.
+    Found 1-bit register for signal <PC4_ID<0>>.
+    Found 1-bit register for signal <PC_ID<31>>.
+    Found 1-bit register for signal <PC_ID<30>>.
+    Found 1-bit register for signal <PC_ID<29>>.
+    Found 1-bit register for signal <PC_ID<28>>.
+    Found 1-bit register for signal <PC_ID<27>>.
+    Found 1-bit register for signal <PC_ID<26>>.
+    Found 1-bit register for signal <PC_ID<25>>.
+    Found 1-bit register for signal <PC_ID<24>>.
+    Found 1-bit register for signal <PC_ID<23>>.
+    Found 1-bit register for signal <PC_ID<22>>.
+    Found 1-bit register for signal <PC_ID<21>>.
+    Found 1-bit register for signal <PC_ID<20>>.
+    Found 1-bit register for signal <PC_ID<19>>.
+    Found 1-bit register for signal <PC_ID<18>>.
+    Found 1-bit register for signal <PC_ID<17>>.
+    Found 1-bit register for signal <PC_ID<16>>.
+    Found 1-bit register for signal <PC_ID<15>>.
+    Found 1-bit register for signal <PC_ID<14>>.
+    Found 1-bit register for signal <PC_ID<13>>.
+    Found 1-bit register for signal <PC_ID<12>>.
+    Found 1-bit register for signal <PC_ID<11>>.
+    Found 1-bit register for signal <PC_ID<10>>.
+    Found 1-bit register for signal <PC_ID<9>>.
+    Found 1-bit register for signal <PC_ID<8>>.
+    Found 1-bit register for signal <PC_ID<7>>.
+    Found 1-bit register for signal <PC_ID<6>>.
+    Found 1-bit register for signal <PC_ID<5>>.
+    Found 1-bit register for signal <PC_ID<4>>.
+    Found 1-bit register for signal <PC_ID<3>>.
+    Found 1-bit register for signal <PC_ID<2>>.
+    Found 1-bit register for signal <PC_ID<1>>.
+    Found 1-bit register for signal <PC_ID<0>>.
+    Found 1-bit register for signal <Instr_ID<31>>.
+    Found 1-bit register for signal <Instr_ID<30>>.
+    Found 1-bit register for signal <Instr_ID<29>>.
+    Found 1-bit register for signal <Instr_ID<28>>.
+    Found 1-bit register for signal <Instr_ID<27>>.
+    Found 1-bit register for signal <Instr_ID<26>>.
+    Found 1-bit register for signal <Instr_ID<25>>.
+    Found 1-bit register for signal <Instr_ID<24>>.
+    Found 1-bit register for signal <Instr_ID<23>>.
+    Found 1-bit register for signal <Instr_ID<22>>.
+    Found 1-bit register for signal <Instr_ID<21>>.
+    Found 1-bit register for signal <Instr_ID<20>>.
+    Found 1-bit register for signal <Instr_ID<19>>.
+    Found 1-bit register for signal <Instr_ID<18>>.
+    Found 1-bit register for signal <Instr_ID<17>>.
+    Found 1-bit register for signal <Instr_ID<16>>.
+    Found 1-bit register for signal <Instr_ID<15>>.
+    Found 1-bit register for signal <Instr_ID<14>>.
+    Found 1-bit register for signal <Instr_ID<13>>.
+    Found 1-bit register for signal <Instr_ID<12>>.
+    Found 1-bit register for signal <Instr_ID<11>>.
+    Found 1-bit register for signal <Instr_ID<10>>.
+    Found 1-bit register for signal <Instr_ID<9>>.
+    Found 1-bit register for signal <Instr_ID<8>>.
+    Found 1-bit register for signal <Instr_ID<7>>.
+    Found 1-bit register for signal <Instr_ID<6>>.
+    Found 1-bit register for signal <Instr_ID<5>>.
+    Found 1-bit register for signal <Instr_ID<4>>.
+    Found 1-bit register for signal <Instr_ID<3>>.
+    Found 1-bit register for signal <Instr_ID<2>>.
+    Found 1-bit register for signal <Instr_ID<1>>.
+    Found 1-bit register for signal <Instr_ID<0>>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+Unit <IF_IDReg> synthesized.
+
+Synthesizing Unit <ID>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\ID.v".
+WARNING:Xst:647 - Input <Instr_ID<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC_ID<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ID> synthesized.
+
+Synthesizing Unit <GRF>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\GRF.v".
+WARNING:Xst:647 - Input <PC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024-bit register for signal <n0055[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <RA1[4]_Register[31][31]_wide_mux_41_OUT> created at line 49.
+    Found 32-bit 32-to-1 multiplexer for signal <RA2[4]_Register[31][31]_wide_mux_45_OUT> created at line 50.
+    Found 5-bit comparator equal for signal <WA[4]_RA1[4]_equal_40_o> created at line 49
+    Found 5-bit comparator equal for signal <WA[4]_RA2[4]_equal_44_o> created at line 50
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <GRF> synthesized.
+
+Synthesizing Unit <EXT>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\EXT.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <EXT> synthesized.
+
+Synthesizing Unit <CMPAformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Found 32-bit 8-to-1 multiplexer for signal <CMPA> created at line 111.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMPAformux> synthesized.
+
+Synthesizing Unit <CMPBformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Found 32-bit 8-to-1 multiplexer for signal <CMPB> created at line 128.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMPBformux> synthesized.
+
+Synthesizing Unit <Raformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Found 32-bit 8-to-1 multiplexer for signal <ra> created at line 144.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Raformux> synthesized.
+
+Synthesizing Unit <Nadder>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\Nadder.v".
+WARNING:Xst:647 - Input <offset<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <Nadder> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Nadder> synthesized.
+
+Synthesizing Unit <splitter>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\splitter.v".
+    Summary:
+	no macro.
+Unit <splitter> synthesized.
+
+Synthesizing Unit <comparator>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\comparator.v".
+    Found 32-bit comparator greater for signal <larger> created at line 28
+    Found 32-bit comparator equal for signal <equal> created at line 29
+    Found 32-bit comparator greater for signal <smaller> created at line 30
+    Summary:
+	inferred   3 Comparator(s).
+Unit <comparator> synthesized.
+
+Synthesizing Unit <ID_EXReg>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\ID_EXReg.v".
+    Found 1-bit register for signal <RD2_EX<31>>.
+    Found 1-bit register for signal <RD2_EX<30>>.
+    Found 1-bit register for signal <RD2_EX<29>>.
+    Found 1-bit register for signal <RD2_EX<28>>.
+    Found 1-bit register for signal <RD2_EX<27>>.
+    Found 1-bit register for signal <RD2_EX<26>>.
+    Found 1-bit register for signal <RD2_EX<25>>.
+    Found 1-bit register for signal <RD2_EX<24>>.
+    Found 1-bit register for signal <RD2_EX<23>>.
+    Found 1-bit register for signal <RD2_EX<22>>.
+    Found 1-bit register for signal <RD2_EX<21>>.
+    Found 1-bit register for signal <RD2_EX<20>>.
+    Found 1-bit register for signal <RD2_EX<19>>.
+    Found 1-bit register for signal <RD2_EX<18>>.
+    Found 1-bit register for signal <RD2_EX<17>>.
+    Found 1-bit register for signal <RD2_EX<16>>.
+    Found 1-bit register for signal <RD2_EX<15>>.
+    Found 1-bit register for signal <RD2_EX<14>>.
+    Found 1-bit register for signal <RD2_EX<13>>.
+    Found 1-bit register for signal <RD2_EX<12>>.
+    Found 1-bit register for signal <RD2_EX<11>>.
+    Found 1-bit register for signal <RD2_EX<10>>.
+    Found 1-bit register for signal <RD2_EX<9>>.
+    Found 1-bit register for signal <RD2_EX<8>>.
+    Found 1-bit register for signal <RD2_EX<7>>.
+    Found 1-bit register for signal <RD2_EX<6>>.
+    Found 1-bit register for signal <RD2_EX<5>>.
+    Found 1-bit register for signal <RD2_EX<4>>.
+    Found 1-bit register for signal <RD2_EX<3>>.
+    Found 1-bit register for signal <RD2_EX<2>>.
+    Found 1-bit register for signal <RD2_EX<1>>.
+    Found 1-bit register for signal <RD2_EX<0>>.
+    Found 1-bit register for signal <EXTData_EX<31>>.
+    Found 1-bit register for signal <EXTData_EX<30>>.
+    Found 1-bit register for signal <EXTData_EX<29>>.
+    Found 1-bit register for signal <EXTData_EX<28>>.
+    Found 1-bit register for signal <EXTData_EX<27>>.
+    Found 1-bit register for signal <EXTData_EX<26>>.
+    Found 1-bit register for signal <EXTData_EX<25>>.
+    Found 1-bit register for signal <EXTData_EX<24>>.
+    Found 1-bit register for signal <EXTData_EX<23>>.
+    Found 1-bit register for signal <EXTData_EX<22>>.
+    Found 1-bit register for signal <EXTData_EX<21>>.
+    Found 1-bit register for signal <EXTData_EX<20>>.
+    Found 1-bit register for signal <EXTData_EX<19>>.
+    Found 1-bit register for signal <EXTData_EX<18>>.
+    Found 1-bit register for signal <EXTData_EX<17>>.
+    Found 1-bit register for signal <EXTData_EX<16>>.
+    Found 1-bit register for signal <EXTData_EX<15>>.
+    Found 1-bit register for signal <EXTData_EX<14>>.
+    Found 1-bit register for signal <EXTData_EX<13>>.
+    Found 1-bit register for signal <EXTData_EX<12>>.
+    Found 1-bit register for signal <EXTData_EX<11>>.
+    Found 1-bit register for signal <EXTData_EX<10>>.
+    Found 1-bit register for signal <EXTData_EX<9>>.
+    Found 1-bit register for signal <EXTData_EX<8>>.
+    Found 1-bit register for signal <EXTData_EX<7>>.
+    Found 1-bit register for signal <EXTData_EX<6>>.
+    Found 1-bit register for signal <EXTData_EX<5>>.
+    Found 1-bit register for signal <EXTData_EX<4>>.
+    Found 1-bit register for signal <EXTData_EX<3>>.
+    Found 1-bit register for signal <EXTData_EX<2>>.
+    Found 1-bit register for signal <EXTData_EX<1>>.
+    Found 1-bit register for signal <EXTData_EX<0>>.
+    Found 1-bit register for signal <PC8_EX<31>>.
+    Found 1-bit register for signal <PC8_EX<30>>.
+    Found 1-bit register for signal <PC8_EX<29>>.
+    Found 1-bit register for signal <PC8_EX<28>>.
+    Found 1-bit register for signal <PC8_EX<27>>.
+    Found 1-bit register for signal <PC8_EX<26>>.
+    Found 1-bit register for signal <PC8_EX<25>>.
+    Found 1-bit register for signal <PC8_EX<24>>.
+    Found 1-bit register for signal <PC8_EX<23>>.
+    Found 1-bit register for signal <PC8_EX<22>>.
+    Found 1-bit register for signal <PC8_EX<21>>.
+    Found 1-bit register for signal <PC8_EX<20>>.
+    Found 1-bit register for signal <PC8_EX<19>>.
+    Found 1-bit register for signal <PC8_EX<18>>.
+    Found 1-bit register for signal <PC8_EX<17>>.
+    Found 1-bit register for signal <PC8_EX<16>>.
+    Found 1-bit register for signal <PC8_EX<15>>.
+    Found 1-bit register for signal <PC8_EX<14>>.
+    Found 1-bit register for signal <PC8_EX<13>>.
+    Found 1-bit register for signal <PC8_EX<12>>.
+    Found 1-bit register for signal <PC8_EX<11>>.
+    Found 1-bit register for signal <PC8_EX<10>>.
+    Found 1-bit register for signal <PC8_EX<9>>.
+    Found 1-bit register for signal <PC8_EX<8>>.
+    Found 1-bit register for signal <PC8_EX<7>>.
+    Found 1-bit register for signal <PC8_EX<6>>.
+    Found 1-bit register for signal <PC8_EX<5>>.
+    Found 1-bit register for signal <PC8_EX<4>>.
+    Found 1-bit register for signal <PC8_EX<3>>.
+    Found 1-bit register for signal <PC8_EX<2>>.
+    Found 1-bit register for signal <PC8_EX<1>>.
+    Found 1-bit register for signal <PC8_EX<0>>.
+    Found 1-bit register for signal <PC_EX<31>>.
+    Found 1-bit register for signal <PC_EX<30>>.
+    Found 1-bit register for signal <PC_EX<29>>.
+    Found 1-bit register for signal <PC_EX<28>>.
+    Found 1-bit register for signal <PC_EX<27>>.
+    Found 1-bit register for signal <PC_EX<26>>.
+    Found 1-bit register for signal <PC_EX<25>>.
+    Found 1-bit register for signal <PC_EX<24>>.
+    Found 1-bit register for signal <PC_EX<23>>.
+    Found 1-bit register for signal <PC_EX<22>>.
+    Found 1-bit register for signal <PC_EX<21>>.
+    Found 1-bit register for signal <PC_EX<20>>.
+    Found 1-bit register for signal <PC_EX<19>>.
+    Found 1-bit register for signal <PC_EX<18>>.
+    Found 1-bit register for signal <PC_EX<17>>.
+    Found 1-bit register for signal <PC_EX<16>>.
+    Found 1-bit register for signal <PC_EX<15>>.
+    Found 1-bit register for signal <PC_EX<14>>.
+    Found 1-bit register for signal <PC_EX<13>>.
+    Found 1-bit register for signal <PC_EX<12>>.
+    Found 1-bit register for signal <PC_EX<11>>.
+    Found 1-bit register for signal <PC_EX<10>>.
+    Found 1-bit register for signal <PC_EX<9>>.
+    Found 1-bit register for signal <PC_EX<8>>.
+    Found 1-bit register for signal <PC_EX<7>>.
+    Found 1-bit register for signal <PC_EX<6>>.
+    Found 1-bit register for signal <PC_EX<5>>.
+    Found 1-bit register for signal <PC_EX<4>>.
+    Found 1-bit register for signal <PC_EX<3>>.
+    Found 1-bit register for signal <PC_EX<2>>.
+    Found 1-bit register for signal <PC_EX<1>>.
+    Found 1-bit register for signal <PC_EX<0>>.
+    Found 1-bit register for signal <WDCtrl_EX<1>>.
+    Found 1-bit register for signal <WDCtrl_EX<0>>.
+    Found 1-bit register for signal <GRFWE_EX>.
+    Found 1-bit register for signal <ALUCtrl_EX<2>>.
+    Found 1-bit register for signal <ALUCtrl_EX<1>>.
+    Found 1-bit register for signal <ALUCtrl_EX<0>>.
+    Found 1-bit register for signal <ALUBCtrl_EX>.
+    Found 1-bit register for signal <DM_WE_EX>.
+    Found 1-bit register for signal <DM_RE_EX>.
+    Found 1-bit register for signal <RA1_EX<4>>.
+    Found 1-bit register for signal <RA1_EX<3>>.
+    Found 1-bit register for signal <RA1_EX<2>>.
+    Found 1-bit register for signal <RA1_EX<1>>.
+    Found 1-bit register for signal <RA1_EX<0>>.
+    Found 1-bit register for signal <RA2_EX<4>>.
+    Found 1-bit register for signal <RA2_EX<3>>.
+    Found 1-bit register for signal <RA2_EX<2>>.
+    Found 1-bit register for signal <RA2_EX<1>>.
+    Found 1-bit register for signal <RA2_EX<0>>.
+    Found 1-bit register for signal <WA_EX<4>>.
+    Found 1-bit register for signal <WA_EX<3>>.
+    Found 1-bit register for signal <WA_EX<2>>.
+    Found 1-bit register for signal <WA_EX<1>>.
+    Found 1-bit register for signal <WA_EX<0>>.
+    Found 1-bit register for signal <Tnew_EX<1>>.
+    Found 1-bit register for signal <Tnew_EX<0>>.
+    Found 1-bit register for signal <jal_EX>.
+    Found 1-bit register for signal <RD1_EX<31>>.
+    Found 1-bit register for signal <RD1_EX<30>>.
+    Found 1-bit register for signal <RD1_EX<29>>.
+    Found 1-bit register for signal <RD1_EX<28>>.
+    Found 1-bit register for signal <RD1_EX<27>>.
+    Found 1-bit register for signal <RD1_EX<26>>.
+    Found 1-bit register for signal <RD1_EX<25>>.
+    Found 1-bit register for signal <RD1_EX<24>>.
+    Found 1-bit register for signal <RD1_EX<23>>.
+    Found 1-bit register for signal <RD1_EX<22>>.
+    Found 1-bit register for signal <RD1_EX<21>>.
+    Found 1-bit register for signal <RD1_EX<20>>.
+    Found 1-bit register for signal <RD1_EX<19>>.
+    Found 1-bit register for signal <RD1_EX<18>>.
+    Found 1-bit register for signal <RD1_EX<17>>.
+    Found 1-bit register for signal <RD1_EX<16>>.
+    Found 1-bit register for signal <RD1_EX<15>>.
+    Found 1-bit register for signal <RD1_EX<14>>.
+    Found 1-bit register for signal <RD1_EX<13>>.
+    Found 1-bit register for signal <RD1_EX<12>>.
+    Found 1-bit register for signal <RD1_EX<11>>.
+    Found 1-bit register for signal <RD1_EX<10>>.
+    Found 1-bit register for signal <RD1_EX<9>>.
+    Found 1-bit register for signal <RD1_EX<8>>.
+    Found 1-bit register for signal <RD1_EX<7>>.
+    Found 1-bit register for signal <RD1_EX<6>>.
+    Found 1-bit register for signal <RD1_EX<5>>.
+    Found 1-bit register for signal <RD1_EX<4>>.
+    Found 1-bit register for signal <RD1_EX<3>>.
+    Found 1-bit register for signal <RD1_EX<2>>.
+    Found 1-bit register for signal <RD1_EX<1>>.
+    Found 1-bit register for signal <RD1_EX<0>>.
+    Summary:
+	inferred 187 D-type flip-flop(s).
+Unit <ID_EXReg> synthesized.
+
+Synthesizing Unit <EX>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\EX.v".
+WARNING:Xst:647 - Input <PC_EX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC8_WB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <EX> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\ALU.v".
+    Found 32-bit subtractor for signal <SrcA[31]_SrcB[31]_sub_2_OUT> created at line 30.
+    Found 32-bit adder for signal <SrcA[31]_SrcB[31]_add_0_OUT> created at line 29.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0092> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0102> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0111> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0120> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0129> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0138> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0147> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0156> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0165> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0174> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0183> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0192> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0201> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0210> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0219> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0228> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0237> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0246> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0255> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0264> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0273> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0282> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0291> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0300> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0309> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0318> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0327> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0336> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0345> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0354> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0363> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0372> created at line 28.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUResult<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Latch(s).
+	inferred  32 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <ALUAformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	no macro.
+Unit <ALUAformux> synthesized.
+
+Synthesizing Unit <ALUBformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	no macro.
+Unit <ALUBformux> synthesized.
+
+Synthesizing Unit <ALUBmux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALUBmux> synthesized.
+
+Synthesizing Unit <RD2formux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	no macro.
+Unit <RD2formux> synthesized.
+
+Synthesizing Unit <EX_MEMReg>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\EX_MEMReg.v".
+    Found 1-bit register for signal <RD2_MEM<31>>.
+    Found 1-bit register for signal <RD2_MEM<30>>.
+    Found 1-bit register for signal <RD2_MEM<29>>.
+    Found 1-bit register for signal <RD2_MEM<28>>.
+    Found 1-bit register for signal <RD2_MEM<27>>.
+    Found 1-bit register for signal <RD2_MEM<26>>.
+    Found 1-bit register for signal <RD2_MEM<25>>.
+    Found 1-bit register for signal <RD2_MEM<24>>.
+    Found 1-bit register for signal <RD2_MEM<23>>.
+    Found 1-bit register for signal <RD2_MEM<22>>.
+    Found 1-bit register for signal <RD2_MEM<21>>.
+    Found 1-bit register for signal <RD2_MEM<20>>.
+    Found 1-bit register for signal <RD2_MEM<19>>.
+    Found 1-bit register for signal <RD2_MEM<18>>.
+    Found 1-bit register for signal <RD2_MEM<17>>.
+    Found 1-bit register for signal <RD2_MEM<16>>.
+    Found 1-bit register for signal <RD2_MEM<15>>.
+    Found 1-bit register for signal <RD2_MEM<14>>.
+    Found 1-bit register for signal <RD2_MEM<13>>.
+    Found 1-bit register for signal <RD2_MEM<12>>.
+    Found 1-bit register for signal <RD2_MEM<11>>.
+    Found 1-bit register for signal <RD2_MEM<10>>.
+    Found 1-bit register for signal <RD2_MEM<9>>.
+    Found 1-bit register for signal <RD2_MEM<8>>.
+    Found 1-bit register for signal <RD2_MEM<7>>.
+    Found 1-bit register for signal <RD2_MEM<6>>.
+    Found 1-bit register for signal <RD2_MEM<5>>.
+    Found 1-bit register for signal <RD2_MEM<4>>.
+    Found 1-bit register for signal <RD2_MEM<3>>.
+    Found 1-bit register for signal <RD2_MEM<2>>.
+    Found 1-bit register for signal <RD2_MEM<1>>.
+    Found 1-bit register for signal <RD2_MEM<0>>.
+    Found 1-bit register for signal <PC8_MEM<31>>.
+    Found 1-bit register for signal <PC8_MEM<30>>.
+    Found 1-bit register for signal <PC8_MEM<29>>.
+    Found 1-bit register for signal <PC8_MEM<28>>.
+    Found 1-bit register for signal <PC8_MEM<27>>.
+    Found 1-bit register for signal <PC8_MEM<26>>.
+    Found 1-bit register for signal <PC8_MEM<25>>.
+    Found 1-bit register for signal <PC8_MEM<24>>.
+    Found 1-bit register for signal <PC8_MEM<23>>.
+    Found 1-bit register for signal <PC8_MEM<22>>.
+    Found 1-bit register for signal <PC8_MEM<21>>.
+    Found 1-bit register for signal <PC8_MEM<20>>.
+    Found 1-bit register for signal <PC8_MEM<19>>.
+    Found 1-bit register for signal <PC8_MEM<18>>.
+    Found 1-bit register for signal <PC8_MEM<17>>.
+    Found 1-bit register for signal <PC8_MEM<16>>.
+    Found 1-bit register for signal <PC8_MEM<15>>.
+    Found 1-bit register for signal <PC8_MEM<14>>.
+    Found 1-bit register for signal <PC8_MEM<13>>.
+    Found 1-bit register for signal <PC8_MEM<12>>.
+    Found 1-bit register for signal <PC8_MEM<11>>.
+    Found 1-bit register for signal <PC8_MEM<10>>.
+    Found 1-bit register for signal <PC8_MEM<9>>.
+    Found 1-bit register for signal <PC8_MEM<8>>.
+    Found 1-bit register for signal <PC8_MEM<7>>.
+    Found 1-bit register for signal <PC8_MEM<6>>.
+    Found 1-bit register for signal <PC8_MEM<5>>.
+    Found 1-bit register for signal <PC8_MEM<4>>.
+    Found 1-bit register for signal <PC8_MEM<3>>.
+    Found 1-bit register for signal <PC8_MEM<2>>.
+    Found 1-bit register for signal <PC8_MEM<1>>.
+    Found 1-bit register for signal <PC8_MEM<0>>.
+    Found 1-bit register for signal <PC_MEM<31>>.
+    Found 1-bit register for signal <PC_MEM<30>>.
+    Found 1-bit register for signal <PC_MEM<29>>.
+    Found 1-bit register for signal <PC_MEM<28>>.
+    Found 1-bit register for signal <PC_MEM<27>>.
+    Found 1-bit register for signal <PC_MEM<26>>.
+    Found 1-bit register for signal <PC_MEM<25>>.
+    Found 1-bit register for signal <PC_MEM<24>>.
+    Found 1-bit register for signal <PC_MEM<23>>.
+    Found 1-bit register for signal <PC_MEM<22>>.
+    Found 1-bit register for signal <PC_MEM<21>>.
+    Found 1-bit register for signal <PC_MEM<20>>.
+    Found 1-bit register for signal <PC_MEM<19>>.
+    Found 1-bit register for signal <PC_MEM<18>>.
+    Found 1-bit register for signal <PC_MEM<17>>.
+    Found 1-bit register for signal <PC_MEM<16>>.
+    Found 1-bit register for signal <PC_MEM<15>>.
+    Found 1-bit register for signal <PC_MEM<14>>.
+    Found 1-bit register for signal <PC_MEM<13>>.
+    Found 1-bit register for signal <PC_MEM<12>>.
+    Found 1-bit register for signal <PC_MEM<11>>.
+    Found 1-bit register for signal <PC_MEM<10>>.
+    Found 1-bit register for signal <PC_MEM<9>>.
+    Found 1-bit register for signal <PC_MEM<8>>.
+    Found 1-bit register for signal <PC_MEM<7>>.
+    Found 1-bit register for signal <PC_MEM<6>>.
+    Found 1-bit register for signal <PC_MEM<5>>.
+    Found 1-bit register for signal <PC_MEM<4>>.
+    Found 1-bit register for signal <PC_MEM<3>>.
+    Found 1-bit register for signal <PC_MEM<2>>.
+    Found 1-bit register for signal <PC_MEM<1>>.
+    Found 1-bit register for signal <PC_MEM<0>>.
+    Found 1-bit register for signal <WDCtrl_MEM<1>>.
+    Found 1-bit register for signal <WDCtrl_MEM<0>>.
+    Found 1-bit register for signal <GRFWE_MEM>.
+    Found 1-bit register for signal <DM_RE_MEM>.
+    Found 1-bit register for signal <DM_WE_MEM>.
+    Found 1-bit register for signal <RA1_MEM<4>>.
+    Found 1-bit register for signal <RA1_MEM<3>>.
+    Found 1-bit register for signal <RA1_MEM<2>>.
+    Found 1-bit register for signal <RA1_MEM<1>>.
+    Found 1-bit register for signal <RA1_MEM<0>>.
+    Found 1-bit register for signal <RA2_MEM<4>>.
+    Found 1-bit register for signal <RA2_MEM<3>>.
+    Found 1-bit register for signal <RA2_MEM<2>>.
+    Found 1-bit register for signal <RA2_MEM<1>>.
+    Found 1-bit register for signal <RA2_MEM<0>>.
+    Found 1-bit register for signal <WA_MEM<4>>.
+    Found 1-bit register for signal <WA_MEM<3>>.
+    Found 1-bit register for signal <WA_MEM<2>>.
+    Found 1-bit register for signal <WA_MEM<1>>.
+    Found 1-bit register for signal <WA_MEM<0>>.
+    Found 1-bit register for signal <Tnew_MEM<1>>.
+    Found 1-bit register for signal <Tnew_MEM<0>>.
+    Found 1-bit register for signal <jal_MEM>.
+    Found 1-bit register for signal <ALUResult_MEM<31>>.
+    Found 1-bit register for signal <ALUResult_MEM<30>>.
+    Found 1-bit register for signal <ALUResult_MEM<29>>.
+    Found 1-bit register for signal <ALUResult_MEM<28>>.
+    Found 1-bit register for signal <ALUResult_MEM<27>>.
+    Found 1-bit register for signal <ALUResult_MEM<26>>.
+    Found 1-bit register for signal <ALUResult_MEM<25>>.
+    Found 1-bit register for signal <ALUResult_MEM<24>>.
+    Found 1-bit register for signal <ALUResult_MEM<23>>.
+    Found 1-bit register for signal <ALUResult_MEM<22>>.
+    Found 1-bit register for signal <ALUResult_MEM<21>>.
+    Found 1-bit register for signal <ALUResult_MEM<20>>.
+    Found 1-bit register for signal <ALUResult_MEM<19>>.
+    Found 1-bit register for signal <ALUResult_MEM<18>>.
+    Found 1-bit register for signal <ALUResult_MEM<17>>.
+    Found 1-bit register for signal <ALUResult_MEM<16>>.
+    Found 1-bit register for signal <ALUResult_MEM<15>>.
+    Found 1-bit register for signal <ALUResult_MEM<14>>.
+    Found 1-bit register for signal <ALUResult_MEM<13>>.
+    Found 1-bit register for signal <ALUResult_MEM<12>>.
+    Found 1-bit register for signal <ALUResult_MEM<11>>.
+    Found 1-bit register for signal <ALUResult_MEM<10>>.
+    Found 1-bit register for signal <ALUResult_MEM<9>>.
+    Found 1-bit register for signal <ALUResult_MEM<8>>.
+    Found 1-bit register for signal <ALUResult_MEM<7>>.
+    Found 1-bit register for signal <ALUResult_MEM<6>>.
+    Found 1-bit register for signal <ALUResult_MEM<5>>.
+    Found 1-bit register for signal <ALUResult_MEM<4>>.
+    Found 1-bit register for signal <ALUResult_MEM<3>>.
+    Found 1-bit register for signal <ALUResult_MEM<2>>.
+    Found 1-bit register for signal <ALUResult_MEM<1>>.
+    Found 1-bit register for signal <ALUResult_MEM<0>>.
+    Summary:
+	inferred 151 D-type flip-flop(s).
+Unit <EX_MEMReg> synthesized.
+
+Synthesizing Unit <MEM>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\MEM.v".
+    Summary:
+	no macro.
+Unit <MEM> synthesized.
+
+Synthesizing Unit <DM>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\DM.v".
+WARNING:Xst:647 - Input <Add<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 131072-bit register for signal <n8234[131071:0]>.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<31>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<30>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<29>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<28>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<27>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<26>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<25>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<24>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<23>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<22>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<21>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<20>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<19>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<18>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<17>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<16>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<15>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<14>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<13>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<12>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<11>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<10>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<9>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<8>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<7>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<6>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<5>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<4>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<3>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<2>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<1>> created at line 44.
+    Found 1-bit 4096-to-1 multiplexer for signal <Add[13]_ram[4095][31]_wide_mux_4102_OUT<0>> created at line 44.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ReadData<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 30-bit comparator lessequal for signal <n0000> created at line 40
+    Summary:
+	inferred 131072 D-type flip-flop(s).
+	inferred  32 Latch(s).
+	inferred   1 Comparator(s).
+	inferred 4128 Multiplexer(s).
+Unit <DM> synthesized.
+
+Synthesizing Unit <DM_WDformux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <DM_WDformux> synthesized.
+
+Synthesizing Unit <MEM_WBReg>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\MEM_WBReg.v".
+    Found 1-bit register for signal <ReadData_WB<31>>.
+    Found 1-bit register for signal <ReadData_WB<30>>.
+    Found 1-bit register for signal <ReadData_WB<29>>.
+    Found 1-bit register for signal <ReadData_WB<28>>.
+    Found 1-bit register for signal <ReadData_WB<27>>.
+    Found 1-bit register for signal <ReadData_WB<26>>.
+    Found 1-bit register for signal <ReadData_WB<25>>.
+    Found 1-bit register for signal <ReadData_WB<24>>.
+    Found 1-bit register for signal <ReadData_WB<23>>.
+    Found 1-bit register for signal <ReadData_WB<22>>.
+    Found 1-bit register for signal <ReadData_WB<21>>.
+    Found 1-bit register for signal <ReadData_WB<20>>.
+    Found 1-bit register for signal <ReadData_WB<19>>.
+    Found 1-bit register for signal <ReadData_WB<18>>.
+    Found 1-bit register for signal <ReadData_WB<17>>.
+    Found 1-bit register for signal <ReadData_WB<16>>.
+    Found 1-bit register for signal <ReadData_WB<15>>.
+    Found 1-bit register for signal <ReadData_WB<14>>.
+    Found 1-bit register for signal <ReadData_WB<13>>.
+    Found 1-bit register for signal <ReadData_WB<12>>.
+    Found 1-bit register for signal <ReadData_WB<11>>.
+    Found 1-bit register for signal <ReadData_WB<10>>.
+    Found 1-bit register for signal <ReadData_WB<9>>.
+    Found 1-bit register for signal <ReadData_WB<8>>.
+    Found 1-bit register for signal <ReadData_WB<7>>.
+    Found 1-bit register for signal <ReadData_WB<6>>.
+    Found 1-bit register for signal <ReadData_WB<5>>.
+    Found 1-bit register for signal <ReadData_WB<4>>.
+    Found 1-bit register for signal <ReadData_WB<3>>.
+    Found 1-bit register for signal <ReadData_WB<2>>.
+    Found 1-bit register for signal <ReadData_WB<1>>.
+    Found 1-bit register for signal <ReadData_WB<0>>.
+    Found 1-bit register for signal <PC8_WB<31>>.
+    Found 1-bit register for signal <PC8_WB<30>>.
+    Found 1-bit register for signal <PC8_WB<29>>.
+    Found 1-bit register for signal <PC8_WB<28>>.
+    Found 1-bit register for signal <PC8_WB<27>>.
+    Found 1-bit register for signal <PC8_WB<26>>.
+    Found 1-bit register for signal <PC8_WB<25>>.
+    Found 1-bit register for signal <PC8_WB<24>>.
+    Found 1-bit register for signal <PC8_WB<23>>.
+    Found 1-bit register for signal <PC8_WB<22>>.
+    Found 1-bit register for signal <PC8_WB<21>>.
+    Found 1-bit register for signal <PC8_WB<20>>.
+    Found 1-bit register for signal <PC8_WB<19>>.
+    Found 1-bit register for signal <PC8_WB<18>>.
+    Found 1-bit register for signal <PC8_WB<17>>.
+    Found 1-bit register for signal <PC8_WB<16>>.
+    Found 1-bit register for signal <PC8_WB<15>>.
+    Found 1-bit register for signal <PC8_WB<14>>.
+    Found 1-bit register for signal <PC8_WB<13>>.
+    Found 1-bit register for signal <PC8_WB<12>>.
+    Found 1-bit register for signal <PC8_WB<11>>.
+    Found 1-bit register for signal <PC8_WB<10>>.
+    Found 1-bit register for signal <PC8_WB<9>>.
+    Found 1-bit register for signal <PC8_WB<8>>.
+    Found 1-bit register for signal <PC8_WB<7>>.
+    Found 1-bit register for signal <PC8_WB<6>>.
+    Found 1-bit register for signal <PC8_WB<5>>.
+    Found 1-bit register for signal <PC8_WB<4>>.
+    Found 1-bit register for signal <PC8_WB<3>>.
+    Found 1-bit register for signal <PC8_WB<2>>.
+    Found 1-bit register for signal <PC8_WB<1>>.
+    Found 1-bit register for signal <PC8_WB<0>>.
+    Found 1-bit register for signal <WDCtrl_WB<1>>.
+    Found 1-bit register for signal <WDCtrl_WB<0>>.
+    Found 1-bit register for signal <GRFWE_WB>.
+    Found 1-bit register for signal <WA_WB<4>>.
+    Found 1-bit register for signal <WA_WB<3>>.
+    Found 1-bit register for signal <WA_WB<2>>.
+    Found 1-bit register for signal <WA_WB<1>>.
+    Found 1-bit register for signal <WA_WB<0>>.
+    Found 1-bit register for signal <Tnew_WB<1>>.
+    Found 1-bit register for signal <Tnew_WB<0>>.
+    Found 1-bit register for signal <PC_WB<31>>.
+    Found 1-bit register for signal <PC_WB<30>>.
+    Found 1-bit register for signal <PC_WB<29>>.
+    Found 1-bit register for signal <PC_WB<28>>.
+    Found 1-bit register for signal <PC_WB<27>>.
+    Found 1-bit register for signal <PC_WB<26>>.
+    Found 1-bit register for signal <PC_WB<25>>.
+    Found 1-bit register for signal <PC_WB<24>>.
+    Found 1-bit register for signal <PC_WB<23>>.
+    Found 1-bit register for signal <PC_WB<22>>.
+    Found 1-bit register for signal <PC_WB<21>>.
+    Found 1-bit register for signal <PC_WB<20>>.
+    Found 1-bit register for signal <PC_WB<19>>.
+    Found 1-bit register for signal <PC_WB<18>>.
+    Found 1-bit register for signal <PC_WB<17>>.
+    Found 1-bit register for signal <PC_WB<16>>.
+    Found 1-bit register for signal <PC_WB<15>>.
+    Found 1-bit register for signal <PC_WB<14>>.
+    Found 1-bit register for signal <PC_WB<13>>.
+    Found 1-bit register for signal <PC_WB<12>>.
+    Found 1-bit register for signal <PC_WB<11>>.
+    Found 1-bit register for signal <PC_WB<10>>.
+    Found 1-bit register for signal <PC_WB<9>>.
+    Found 1-bit register for signal <PC_WB<8>>.
+    Found 1-bit register for signal <PC_WB<7>>.
+    Found 1-bit register for signal <PC_WB<6>>.
+    Found 1-bit register for signal <PC_WB<5>>.
+    Found 1-bit register for signal <PC_WB<4>>.
+    Found 1-bit register for signal <PC_WB<3>>.
+    Found 1-bit register for signal <PC_WB<2>>.
+    Found 1-bit register for signal <PC_WB<1>>.
+    Found 1-bit register for signal <PC_WB<0>>.
+    Found 1-bit register for signal <ALUResult_WB<31>>.
+    Found 1-bit register for signal <ALUResult_WB<30>>.
+    Found 1-bit register for signal <ALUResult_WB<29>>.
+    Found 1-bit register for signal <ALUResult_WB<28>>.
+    Found 1-bit register for signal <ALUResult_WB<27>>.
+    Found 1-bit register for signal <ALUResult_WB<26>>.
+    Found 1-bit register for signal <ALUResult_WB<25>>.
+    Found 1-bit register for signal <ALUResult_WB<24>>.
+    Found 1-bit register for signal <ALUResult_WB<23>>.
+    Found 1-bit register for signal <ALUResult_WB<22>>.
+    Found 1-bit register for signal <ALUResult_WB<21>>.
+    Found 1-bit register for signal <ALUResult_WB<20>>.
+    Found 1-bit register for signal <ALUResult_WB<19>>.
+    Found 1-bit register for signal <ALUResult_WB<18>>.
+    Found 1-bit register for signal <ALUResult_WB<17>>.
+    Found 1-bit register for signal <ALUResult_WB<16>>.
+    Found 1-bit register for signal <ALUResult_WB<15>>.
+    Found 1-bit register for signal <ALUResult_WB<14>>.
+    Found 1-bit register for signal <ALUResult_WB<13>>.
+    Found 1-bit register for signal <ALUResult_WB<12>>.
+    Found 1-bit register for signal <ALUResult_WB<11>>.
+    Found 1-bit register for signal <ALUResult_WB<10>>.
+    Found 1-bit register for signal <ALUResult_WB<9>>.
+    Found 1-bit register for signal <ALUResult_WB<8>>.
+    Found 1-bit register for signal <ALUResult_WB<7>>.
+    Found 1-bit register for signal <ALUResult_WB<6>>.
+    Found 1-bit register for signal <ALUResult_WB<5>>.
+    Found 1-bit register for signal <ALUResult_WB<4>>.
+    Found 1-bit register for signal <ALUResult_WB<3>>.
+    Found 1-bit register for signal <ALUResult_WB<2>>.
+    Found 1-bit register for signal <ALUResult_WB<1>>.
+    Found 1-bit register for signal <ALUResult_WB<0>>.
+    Summary:
+	inferred 138 D-type flip-flop(s).
+Unit <MEM_WBReg> synthesized.
+
+Synthesizing Unit <WB>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\WB.v".
+    Summary:
+	no macro.
+Unit <WB> synthesized.
+
+Synthesizing Unit <WDmux>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\mux.v".
+    Summary:
+	no macro.
+Unit <WDmux> synthesized.
+
+Synthesizing Unit <instr_judge>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\instr_judge.v".
+    Summary:
+	no macro.
+Unit <instr_judge> synthesized.
+
+Synthesizing Unit <signal_generator>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\signal_generator.v".
+WARNING:Xst:647 - Input <larger> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <smaller> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <signal_generator> synthesized.
+
+Synthesizing Unit <AT_decoder>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\AT_decoder.v".
+WARNING:Xst:647 - Input <Instr<10:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <AT_decoder> synthesized.
+
+Synthesizing Unit <forward_signal_generator>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\forward_signal_generator.v".
+WARNING:Xst:647 - Input <Tnew_MEM> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Tnew_WB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <forward_signal_generator> synthesized.
+
+Synthesizing Unit <stall_flush_signal_generator>.
+    Related source file is "D:\VHDLfile\P5CPU\assembly_line_CPU\stall_flush_signal_generator.v".
+    Summary:
+	no macro.
+Unit <stall_flush_signal_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mips.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 1427.00 secs
+Total CPU time to Xst completion: 1426.43 secs
+ 
+--> 
+
+Total memory usage is 5851920 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

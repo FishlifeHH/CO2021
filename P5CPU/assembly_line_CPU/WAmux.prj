@@ -1,0 +1,4 @@
+verilog work "mux.v"
+verilog work "DM.v"
+verilog work "MEM.v"
+verilog work "WB.v"

@@ -1,0 +1,49 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/VHDLfile/P4CPU/mips_test_isim_beh.exe -prj D:/VHDLfile/P4CPU/mips_test_beh.prj work.mips_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/VHDLfile/P4CPU/splitter.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/signal_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/PC.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/Nadder.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/mux.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/instr_judge.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/IM.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/GRF.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/EXT.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/DM.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/ALU.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/adder.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/datapath.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/controller.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/mips.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P4CPU/mips_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module IM
+Compiling module GRF
+Compiling module WAmux
+Compiling module WDmux
+Compiling module ALU
+Compiling module ALUBmux
+Compiling module DM
+Compiling module EXT
+Compiling module nPCmux
+Compiling module adder
+Compiling module Nadder
+Compiling module splitter
+Compiling module datapath
+Compiling module instr_judge
+Compiling module signal_generator
+Compiling module controller
+Compiling module mips
+Compiling module mips_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 20 Verilog Units
+Built simulation executable D:/VHDLfile/P4CPU/mips_test_isim_beh.exe
+Fuse Memory Usage: 29052 KB
+Fuse CPU Usage: 703 ms

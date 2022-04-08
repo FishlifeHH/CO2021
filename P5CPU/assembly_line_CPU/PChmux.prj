@@ -1,0 +1,6 @@
+verilog work "mux.v"
+verilog work "datapath.v"
+verilog work "hazard_solver.v"
+verilog work "hazard_judge.v"
+verilog work "forward_signal_generator.v"
+verilog work "stall_flush_signal_generator.v"

@@ -1,0 +1,3 @@
+verilog work "signal_generator.v"
+verilog work "instr_judge.v"
+verilog work "controller.v"

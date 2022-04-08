@@ -1,0 +1,5 @@
+verilog work "PC.v"
+verilog work "mux.v"
+verilog work "IM.v"
+verilog work "adder.v"
+verilog work "IF.v"

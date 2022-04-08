@@ -1,0 +1,97 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/VHDLfile/P7CPU/Generaltb_isim_beh.exe -prj D:/VHDLfile/P7CPU/Generaltb_beh.prj work.Generaltb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/VHDLfile/P7CPU/MDC.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/splitter.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/PC.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/Nadder.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/mux.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/MDM.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/GRF.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/EXT.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/ExcCode_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/DMfdata2mdata.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/DMEXT.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/CP0.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/comparator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/byteen_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/ALU.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/adder.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/WB.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/stall_flush_signal_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/signal_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/MEM_WBReg.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/MEM.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/instr_judge.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/IF_IDReg.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/IF.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/ID_EXReg.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/ID.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/forward_signal_generator.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/EX_MEMReg.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/EX.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/AT_decoder.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/P7_standard_timer_2019.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/hazard_solver.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/datapath.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/controller.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/bridge.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/mips.v" into library work
+Analyzing Verilog file "D:/VHDLfile/P7CPU/Generaltb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module adder
+Compiling module nPCmux
+Compiling module IF
+Compiling module IF_IDReg
+Compiling module GRF
+Compiling module EXT
+Compiling module CMPAformux
+Compiling module CMPBformux
+Compiling module Raformux
+Compiling module Nadder
+Compiling module splitter
+Compiling module comparator
+Compiling module ID
+Compiling module ID_EXReg
+Compiling module ALU
+Compiling module ALUAformux
+Compiling module ALUBformux
+Compiling module ALUBmux
+Compiling module MDC
+Compiling module MDM
+Compiling module EX
+Compiling module EX_MEMReg
+Compiling module DM_WDformux
+Compiling module DMEXT
+Compiling module byteen_generator
+Compiling module DMfdata2mdata
+Compiling module CP0
+Compiling module ExcCode_generator
+Compiling module MEM
+Compiling module MEM_WBReg
+Compiling module WDmux
+Compiling module WB
+Compiling module datapath
+Compiling module instr_judge
+Compiling module signal_generator
+Compiling module controller
+Compiling module AT_decoder
+Compiling module forward_signal_generator
+Compiling module stall_flush_signal_generator
+Compiling module hazard_solver
+Compiling module bridge
+Compiling module TC
+Compiling module mips
+Compiling module Generaltb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 46 Verilog Units
+Built simulation executable D:/VHDLfile/P7CPU/Generaltb_isim_beh.exe
+Fuse Memory Usage: 32168 KB
+Fuse CPU Usage: 780 ms

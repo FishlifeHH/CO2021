@@ -1,0 +1,5 @@
+verilog work "MDC.v"
+verilog work "mux.v"
+verilog work "MDM.v"
+verilog work "ALU.v"
+verilog work "EX.v"

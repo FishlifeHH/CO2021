@@ -1,0 +1,4 @@
+verilog work "stall_flush_signal_generator.v"
+verilog work "forward_signal_generator.v"
+verilog work "AT_decoder.v"
+verilog work "hazard_solver.v"

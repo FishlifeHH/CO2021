@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/VHDLfile/P5CPU/assembly_line_CPU/mips.xst" -ofn "D:/VHDLfile/P5CPU/assembly_line_CPU/mips.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-csg324-3 mips.ngc mips.ngd  
+map -intstyle ise -p xa6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mips_map.ncd mips.ngd mips.pcf 
+xst -intstyle ise -ifn "D:/VHDLfile/P5CPU/assembly_line_CPU/mips.xst" -ofn "D:/VHDLfile/P5CPU/assembly_line_CPU/mips.syr" 

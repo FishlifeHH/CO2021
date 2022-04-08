@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDLfile/P7CPU/Generaltb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Generaltb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/SrcA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/SrcB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDCCtrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDCCtrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MDCCtrl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDM_WD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDM_WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDM_WD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDM_RE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDM_RE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MDM_RE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDM_WE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDM_WE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MDM_WE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/IntReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IntReq</obj_property>
+      <obj_property name="ObjectShortName">IntReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDM_RD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDM_RD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDM_RD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDCResult_hi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDCResult_hi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDCResult_hi[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/MDCResult_lo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MDCResult_lo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDCResult_lo[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/hi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hi[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/lo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lo[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/st" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">st[3:0]</obj_property>
+      <obj_property name="ObjectShortName">st[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/nst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nst[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nst[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/EX_uut/MDM_uut/ctrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ctrl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/RI_EX" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RI_EX</obj_property>
+      <obj_property name="ObjectShortName">RI_EX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/IF_ID_uut/Instr_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instr_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/controller_uut/instr_judge_uut/mult" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mult</obj_property>
+      <obj_property name="ObjectShortName">mult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/controller_uut/instr_judge_uut/multu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multu</obj_property>
+      <obj_property name="ObjectShortName">multu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/controller_uut/instr_judge_uut/div" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">div</obj_property>
+      <obj_property name="ObjectShortName">div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/controller_uut/instr_judge_uut/divu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">divu</obj_property>
+      <obj_property name="ObjectShortName">divu</obj_property>
+   </wvobject>
+</wave_config>

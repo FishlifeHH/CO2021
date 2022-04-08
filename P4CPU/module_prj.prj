@@ -1,0 +1,16 @@
+Verilog work d:/VHDLfile/P4CPU/adder.v
+Verilog work d:/VHDLfile/P4CPU/ALU.v
+Verilog work d:/VHDLfile/P4CPU/controller.v
+Verilog work d:/VHDLfile/P4CPU/datapath.v
+Verilog work d:/VHDLfile/P4CPU/DM.v
+Verilog work d:/VHDLfile/P4CPU/EXT.v
+Verilog work d:/VHDLfile/P4CPU/GRF.v
+Verilog work d:/VHDLfile/P4CPU/IM.v
+Verilog work d:/VHDLfile/P4CPU/instr_judge.v
+Verilog work d:/VHDLfile/P4CPU/mips.v
+Verilog work d:/VHDLfile/P4CPU/mux.v
+Verilog work d:/VHDLfile/P4CPU/Nadder.v
+Verilog work d:/VHDLfile/P4CPU/PC.v
+Verilog work d:/VHDLfile/P4CPU/signal_generator.v
+Verilog work d:/VHDLfile/P4CPU/splitter.v
+Verilog work d:/VHDLfile/P4CPU/mips_test.v

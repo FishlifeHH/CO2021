@@ -1,0 +1,28 @@
+Command line:
+   MDCtb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50075
+
+Sat Dec 11 17:08:42 2021
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 5654.19 Meg
+
+ Total Signals          : 23
+ Total Nets             : 342
+ Total Signal Drivers   : 15
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 553
+
+ Total Simulation Time: 0.6875 sec
+
+ Current Memory Usage: 4710.47 Meg
+
+Sat Dec 11 17:31:11 2021
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/VHDLfile/P7CPU/Generaltb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Generaltb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/overflow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/RI" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RI</obj_property>
+      <obj_property name="ObjectShortName">RI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/PC_err" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_err</obj_property>
+      <obj_property name="ObjectShortName">PC_err</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/byteen" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">byteen[3:0]</obj_property>
+      <obj_property name="ObjectShortName">byteen[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/DMEXTCtrl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DMEXTCtrl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEXTCtrl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/dev_add" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dev_add[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dev_add[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/ExcCode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcCode[6:2]</obj_property>
+      <obj_property name="ObjectShortName">ExcCode[6:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/AdEL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">AdEL</obj_property>
+      <obj_property name="ObjectShortName">AdEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/AdES" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">AdES</obj_property>
+      <obj_property name="ObjectShortName">AdES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/Ov" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Ov</obj_property>
+      <obj_property name="ObjectShortName">Ov</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/outrange_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">outrange_load</obj_property>
+      <obj_property name="ObjectShortName">outrange_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/outrange_save" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">outrange_save</obj_property>
+      <obj_property name="ObjectShortName">outrange_save</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/noalign_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">noalign_load</obj_property>
+      <obj_property name="ObjectShortName">noalign_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/noalign_save" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">noalign_save</obj_property>
+      <obj_property name="ObjectShortName">noalign_save</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/optimer_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">optimer_load</obj_property>
+      <obj_property name="ObjectShortName">optimer_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/optimer_save" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">optimer_save</obj_property>
+      <obj_property name="ObjectShortName">optimer_save</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/add_ov_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">add_ov_load</obj_property>
+      <obj_property name="ObjectShortName">add_ov_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/MEM_uut/ExcCode_uut/add_ov_save" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">add_ov_save</obj_property>
+      <obj_property name="ObjectShortName">add_ov_save</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_IF" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_IF[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_ID[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_EX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_EX[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_MEM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Generaltb/uut/datapath_uut/PC_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_WB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
